@@ -1,0 +1,46 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'dist-tag',
+1 verbose cli   'add',
+1 verbose cli   '@tushar00jain/onepack@1.2.3',
+1 verbose cli   'test' ]
+2 info using npm@3.3.10
+3 info using node@v0.12.7
+4 verbose dist-tag add test to @tushar00jain/onepack@1.2.3
+5 silly mapToRegistry name @tushar00jain/onepack
+6 silly mapToRegistry scope (from package name) @tushar00jain
+7 verbose mapToRegistry no registry URL found in name for scope @tushar00jain
+8 silly mapToRegistry using default registry
+9 silly mapToRegistry registry http://localhost:15443/
+10 silly mapToRegistry uri http://localhost:15443/@tushar00jain%2fonepack
+11 verbose request uri http://localhost:15443/-/package/@tushar00jain%2fonepack/dist-tags
+12 verbose request no auth needed
+13 info attempt registry request try #1 at 7:02:13 AM
+14 verbose request id 62153dfc2efb37a5
+15 http request GET http://localhost:15443/-/package/@tushar00jain%2fonepack/dist-tags
+16 http 404 http://localhost:15443/-/package/@tushar00jain%2fonepack/dist-tags
+17 verbose headers { 'content-type': 'application/json',
+17 verbose headers   date: 'Mon, 02 Nov 2015 23:02:13 GMT',
+17 verbose headers   connection: 'keep-alive',
+17 verbose headers   'transfer-encoding': 'chunked' }
+18 verbose stack Error: missing : -/package/@tushar00jain%2fonepack/dist-tags
+18 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+18 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+18 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+18 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+18 verbose stack     at Request.emit (events.js:110:17)
+18 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+18 verbose stack     at Request.emit (events.js:129:20)
+18 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+18 verbose stack     at IncomingMessage.emit (events.js:129:20)
+18 verbose stack     at _stream_readable.js:908:16
+19 verbose statusCode 404
+20 verbose cwd /Users/tusharjain/code/node
+21 error Darwin 15.0.0
+22 error argv "node" "/usr/local/bin/npm" "dist-tag" "add" "@tushar00jain/onepack@1.2.3" "test"
+23 error node v0.12.7
+24 error npm  v3.3.10
+25 error code E404
+26 error 404 missing : -/package/@tushar00jain%2fonepack/dist-tags
+27 verbose exit [ 1, true ]
